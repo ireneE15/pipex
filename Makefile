@@ -6,7 +6,7 @@
 #    By: iescalon <iescalon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/24 17:06:46 by iescalon          #+#    #+#              #
-#    Updated: 2024/05/24 18:53:50 by iescalon         ###   ########.fr        #
+#    Updated: 2024/05/24 18:56:46 by iescalon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,10 +15,10 @@ DEL				= rm -f
 CC				= gcc
 FLAGS			= -Wall -Wextra -Werror
 
+#Nombre del proyecto 
 NAME			= pipex
 
-
-
+#Files
 SRC_files		= 
 
 #SRC				= $(addprefix $(SRC_DIR))
