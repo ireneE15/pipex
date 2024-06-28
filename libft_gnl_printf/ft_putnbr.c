@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbr.c                                           :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iescalon <iescalon@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: iescalon <iescalon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 10:30:27 by iescalon          #+#    #+#             */
-/*   Updated: 2024/01/24 12:01:56 by iescalon         ###   ########.fr       */
+/*   Updated: 2024/06/04 15:25:33 by iescalon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int	ft_countnbr(int nbr)
 {

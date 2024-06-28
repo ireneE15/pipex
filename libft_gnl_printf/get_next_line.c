@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: irene <irene@student.42.fr>                +#+  +:+       +#+        */
+/*   By: iescalon <iescalon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 11:05:45 by iescalon          #+#    #+#             */
-/*   Updated: 2024/05/13 12:35:26 by irene            ###   ########.fr       */
+/*   Updated: 2024/06/04 15:17:06 by iescalon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_bzero(void *str, size_t n)
+{
+	size_t	count;
+
+	count = 0;
+	while (count < n)
+	{
+		((unsigned char *)str)[count] = 0;
+		count++;
+	}
+}
 
 char	*ft_read(int fd, char *buffer)
 {

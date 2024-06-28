@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iescalon <iescalon@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: iescalon <iescalon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 12:21:00 by iescalon          #+#    #+#             */
-/*   Updated: 2024/01/25 12:17:00 by iescalon         ###   ########.fr       */
+/*   Updated: 2024/06/04 15:26:01 by iescalon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 static int	ft_check(va_list args, char c)
 {

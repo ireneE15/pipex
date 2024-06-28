@@ -1,19 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_putstr.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iescalon <iescalon@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: iescalon <iescalon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/24 14:11:58 by iescalon          #+#    #+#             */
-/*   Updated: 2024/01/24 14:19:48 by iescalon         ###   ########.fr       */
+/*   Created: 2024/01/23 12:46:55 by iescalon          #+#    #+#             */
+/*   Updated: 2024/06/04 15:26:16 by iescalon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_putptr(unsigned long int ptr)
+int	ft_putchar(int c)
 {
-	ft_putstr("0x");
-	return (ft_puthex(ptr, 'x') + 2);
+	write(1, &c, 1);
+	return (1);
+}
+
+int	ft_putstr(char *s)
+{
+	int	len;
+
+	if (!s)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
+	len = ft_strlen(s);
+	write(1, s, len);
+	return (len);
 }
